@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 1%;
+    grid-template-areas: "box1 box2 box2 box3 box4"
+                          "box5 box6 box7 box3 box4"
+                          "box8 box8 box8 box8 box4"
+                          "box9 box9 box10 box11 box4"
+                          "box9 box9 box12 box13 box4"
+}
+
+.container > div {
+    border: 4px black dashed;
+    transition: transform .25s ease;
+}
+
+
+#box1 {
+    grid-area: box1;
+    background-color: green;
+}
+
+#box2 {
+    grid-area: box2;
+    background-color: lightgreen;
+}
+
+#box3 {
+    grid-area: box3;
+    background-color: lightblue;
+}
+
+#box4 {
+    grid-area: box4;
+    background-color: plum;
+}
+
+#box5 {
+    grid-area: box5;
+    background-color: greenyellow;
+}
+
+#box6 {
+    grid-area: box6;
+    background-color: blue;
+}
+
+#box7 {
+    grid-area: box7;
+    background-color: red;
+}
+
+#box8 {
+    grid-area: box8;
+    background-color: peru;
+}
+
+#box9 {
+    grid-area: box9;
+    background-color: blueviolet;
+}
+
+#box10 {
+    grid-area: box10;
+    background-color: black;
+}
+
+#box11 {
+    grid-area: box11;
+    background-color: palevioletred;
+}
+
+#box12 {
+    grid-area: box12;
+    background-color: red;
+}
+
+#box13 {
+    grid-area: box13;
+    background-color: lightskyblue;
+}
+
+.boxas:hover {
+    transform: scale(.9);
+}
